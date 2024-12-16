@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jammu and Kashmir</title>
+    <link href="gujaratcss.css" rel="stylesheet" />
+    <style>
+      .container {
+            display: flex;
+            width: 1400px;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+            border-right: 1px solid #666363; /* Border to the right of each column */
+            text-align: center; /* Center-align text in the main columns */
+        }
+        /* Remove the border from the last column */
+        .column:last-child {
+            border-right: none;
+        }
+        /* Nested columns within the first main column */
+        .nested-container {
+            display: flex;
+        }
+        .nested-column {
+            flex: 1;
+            padding: 5px;
+            border-right: 1px solid #999; /* Border to the right of each nested column */
+            text-align: center; /* Center-align text in the nested columns */
+        }
+        /* Remove the border from the last nested column */
+        .nested-column:last-child {
+            border-right: none;
+        }
+  </style>
+  </head>
+  <body>
+    <div class="image-slideshow">
+      <div class="image fade">
+        <img src="img/punjab1.jpg" class="slide-img" alt="Mountain Top" />
+      </div>
+      <div class="overlay-text">Famous Punjab Pilgrimages</div>
+    </div>
+      <h1 style="text-align: center;">
+        "ਪੰਜਾਬ ਦੀ ਧਰਮਿਅਥਾਨ ਯਾਤਰਾ: ਆਤਮਿਕ ਸੰਤੁਸ਼ਟੀ ਅਤੇ ਸੰਸਕਾਰਾਂ ਦੀ ਮੰਜ਼ਿਲ।"<br>
+         ( Punjab Pilgrimage: A Journey of Spiritual Fulfillment and Cultural Values )
+      </h1>
+      
+
+      <h3 style="font-size: 30px; font-weight: bold; text-align: left; margin-left: 95px; margin-bottom: 5px;">GOLDEN TEMPLE</h3>
+      <section class="col--2">
+        <img src="img/punjab1.jpg" style="height: 280px;" class="somnath">
+      <p style="font-size: 20px;">The Golden Temple, also known as Harmandir Sahib, was founded in 1577 by Guru Ram Das, the fourth Sikh Guru, in Amritsar, Punjab. The construction of the temple was completed in 1604 under the leadership of the fifth Guru, Guru Arjan Dev, who also installed the Adi Granth, the holy scripture of Sikhism, inside the temple. The temple was built as a place of worship for people of all religions, reflecting the Sikh principles of equality and humility. The surrounding Amrit Sarovar (sacred pool) was believed to have healing powers, attracting devotees from all over. Over time, the temple has undergone several renovations, including being covered in gold leaf in the early 19th century by Maharaja Ranjit Singh, which gave it the iconic appearance it has today.</p>
+      </section>
+
+      <section class="col--3">
+        <div class="container">
+          <div class="column">
+              <h2>Timings</h2>
+              <div class="nested-container">
+                  <div class="nested-column">Darshan : 5 am to 10 pm </div>
+                  <div class="nested-column">No entry fee</div>
+                  <div class="nested-column">Dress Code : Decent Wear</div>
+              </div>
+          </div>
+          <div class="column">
+              <h2><a href="https://www.trivago.in" target="_blank">Online Booking</a></h2>
+              <p>Reserve Your stay Today</p>
+          </div>
+          <div class="column">
+              <h2><a href="https://www.google.com/maps/dir/?api=1&destination=Golden temple" target="_blank">Get Directions &rarr;</a></h2>
+              <p>Find Your Way Here</p>
+          </div>
+      </div>
+      </section>
+
+
+      </div>
+    
+        
+    
+      </div>
+    </section>
+      <a href="https://www.makemytrip.com/tripideas/attractions/golden-temple-amristar"><h1 style="text-decoration: none; position: absolute; top: 1265px; left: 430px;color: rgb(17, 10, 1);">GOLDEN TEMPLE</h1></a>
+      <img src="img/punjabmap.jpg" style="height: 1050px;" />
+    </div>
+    <div class="clear"></div>
+        <script>
+      let index = 0;
+      displayImages();
+      function displayImages() {
+        let i;
+        const images = document.getElementsByClassName("image");
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
+        index++;
+        if (index > images.length) {
+          index = 1;
+        }
+        images[index - 1].style.display = "block";
+        setTimeout(displayImages, 2000);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* First image */
+      .image-container img {
+        display: block;
+      }
+      /* Text to trigger the hover effect */
+      .hover-text {
+        position: absolute;
+        top: 75px;
+        left: 310px;
+        color: rgb(12, 11, 11);
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 1; /* Ensure the text is above the images */
+      }
+
+      /* Second image (initially hidden) */
+      .overlay-image {
+        position: absolute;
+        top: -14px;
+        left: 180px;
+        width: 240px;
+        height: 180px;
+        opacity: 0;
+        transition: opacity 0.3s ease; /* Smooth transition */
+      }
+
+      /* Show the overlay image on text hover */
+      .hover-text:hover + .overlay-image {
+        opacity: 1;
+      }
+
+      .col--2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+      }
+
+      .heading {
+        text-align: center;
+  font-size: 30px;
+}
+    </style>
+  </head>
+  <body>
+
+    <section class="head">
+      <h1 class="heading">India Pilgrimage Places</h1>
+    </section>
+
+    <div class="col--2">
+      <div class="image-container">
+        <!-- First image -->
+        <img
+          src="img/india.jpg"
+          alt="First Image"
+          style="height: 670px; width: 890px"
+        />
+
+        <!-- Hoverable text -->
+        <a href="Jammu.html" class="hover-text" data-info-id="jk">J&K</a>
+
+        <!-- Second image (appears on hover) -->
+        <img src="img/file.png" alt="Second Image" class="overlay-image" />
+      
+      </div>
+
+
+      <section id="info">
+        <p>"तीर्थं तीर्थस्य माहात्म्यं यत्र धर्मो प्रतिष्ठितः।"</p>
+        <img src="img/sanatan.png" />
+        <p class="para">
+          HINDU DHARMA is like a boundless ocean teeming with priceless gems.
+          The deeper you dive the more treasures you find!
+        </p>
+      </section>
+
+    
+
+      <div id="hidden-info" style="display: none">
+        <div id="jk">
+          <h1 class="h11">J&K : JAMMU AND KASHMIR</h1>
+          <h3 class="h33">Capital &rAarr; Srinagar</h3>
+          <h3 class="h33">Area &rAarr; 222,236 km²</h3>
+          <h3 class="h33">Population &rAarr; 1.25Cr</h3>
+
+          <h2 class="h22">Famous Pilgrimage Places in J&K</h2>
+          <ul>
+            <li>Vaishno Devi</li>
+            <li>Amarnath</li>
+            <li>Lamayarui</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    </div>
+
+
+    <script src="mainjs.js"></script>
+  </body>
+</html>

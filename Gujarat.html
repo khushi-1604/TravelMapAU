@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gujarat</title>
+    <link href="gujaratcss.css" rel="stylesheet" />
+    <style>
+      .container {
+            display: flex;
+            width: 1400px;
+        }
+        .column {
+            flex: 1;
+            padding: 10px;
+            border-right: 1px solid #666363; /* Border to the right of each column */
+            text-align: center; /* Center-align text in the main columns */
+        }
+        /* Remove the border from the last column */
+        .column:last-child {
+            border-right: none;
+        }
+        /* Nested columns within the first main column */
+        .nested-container {
+            display: flex;
+        }
+        .nested-column {
+            flex: 1;
+            padding: 5px;
+            border-right: 1px solid #999; /* Border to the right of each nested column */
+            text-align: center; /* Center-align text in the nested columns */
+        }
+        /* Remove the border from the last nested column */
+        .nested-column:last-child {
+            border-right: none;
+        }
+  </style>
+  </head>
+  <body>
+    <div class="image-slideshow">
+      <div class="image fade">
+        <img src="img/gujmain.jpeg" class="slide-img" alt="Mountain Top" />
+      </div>
+      <div class="image fade">
+        <img src="img/dwarka.jpg" class="slide-img" alt="Palm Trees" />
+      </div>
+      <div class="image fade">
+        <img src="img/somnath.jpg" class="slide-img" alt="Neon Sign" />
+      </div>
+      <div class="overlay-text">Famous Gujarat Pilgrimages</div>
+    </div>
+      <h1 style="text-align: center;">
+        "મહિમા છે પવિત્ર, ગુજરાતના તીર્થધામનો, જ્યાં ભક્તિ અને શ્રદ્ધાથી, ભરી
+        જાય આંધળો મનનો."
+      </h1>
+      <audio controls autoplay style="display: none;">
+        <source src="voice.ogg" type="audio/ogg"/>
+      </audio>
+
+      <h3 style="font-size: 30px; font-weight: bold; text-align: left; margin-left: 95px; margin-bottom: 5px;">SOMNATH</h3>
+      <section class="col--2">
+        <img src="img/somnath.jpg" class="somnath">
+      <p style="font-size: 20px;">The Somnath Temple, located in Gujarat, India, is one of the twelve Jyotirlinga shrines of Shiva. Its origins trace back to ancient times, believed to be first constructed in gold by the Moon God, Chandra, in honor of Lord Shiva. The temple has been destroyed and rebuilt multiple times throughout history, reflecting its resilience and significance in Hindu culture. The current structure, completed in 1951, stands as a symbol of enduring faith and devotion.</p>
+      </section>
+
+      <section class="col--3">
+        <div class="container">
+          <div class="column">
+              <h2>Timings</h2>
+              <div class="nested-container">
+                  <div class="nested-column">Darshan : 6 am to 10 pm</div>
+                  <div class="nested-column">Aarti : 7 am , 12 noon , 7 pm</div>
+                  <div class="nested-column">Light Show : 8 pm to 9 pm</div>
+              </div>
+          </div>
+          <div class="column">
+              <h2><a href="https://www.trivago.in" target="_blank">Online Booking</a></h2>
+              <p>Reserve Your Stay Today</p>
+          </div>
+          <div class="column">
+              <h2><a href="https://www.google.com/maps/dir/?api=1&destination=Somnath" target="_blank">Get Directions &rarr;</a></h2>
+              <p>Find Your Way Here</p>
+          </div>
+      </div>
+      </section>
+
+      <div class="separate"></div>
+
+      <h3 style="font-size: 30px; font-weight: bold; text-align: left; margin-left: 95px; margin-bottom: 5px;">DWARKA</h3>
+      <section class="col--2">
+        <img src="img/dwarka.jpg" class="somnath">
+      <p style="font-size: 20px;">The Somnath Temple, located in Gujarat, India, is one of the twelve Jyotirlinga shrines of Shiva. Its origins trace back to ancient times, believed to be first constructed in gold by the Moon God, Chandra, in honor of Lord Shiva. The temple has been destroyed and rebuilt multiple times throughout history, reflecting its resilience and significance in Hindu culture. The current structure, completed in 1951, stands as a symbol of enduring faith and devotion.</p>
+      </section>
+      <section class="col--3">
+        <div class="container">
+          <div class="column">
+              <h2>Timings</h2>
+              <div class="nested-container">
+                  <div class="nested-column">Darshan : 6.30 am to 1 pm , 5 pm to 9.30 pm</div>
+                  <div class="nested-column">Aarti : 11 am , Temple close : 1 pm to 5 pm</div>
+                  <div class="nested-column">Abhishek snan : 8 am to 9 am</div>
+              </div>
+          </div>
+          <div class="column">
+              <h2><a href="https://www.trivago.in" target="_blank">Online Booking</a></h2>
+              <p>Reserve Your Stay Today</p>
+          </div>
+          <div class="column">
+              <h2><a href="https://www.google.com/maps/dir/?api=1&destination=Dwarka" target="_blank">Get Directions &rarr;</a></h2>
+              <p>Find Your Way Here</p>
+          </div>
+      </div>
+      </section>
+
+
+      </div>
+    
+    <div class="map">
+      <section class="img-bar">
+      <div class="imgs">
+        <div class="img1">
+          <a href="https://blog.yatradham.org/famous-shiva-temples-gujarat/"><img src="img/shiva.jpg"></a>
+          <h2 class="img-tag">Shiv Temple</h2>
+        </div>
+        <div class="img1">
+          <a href="https://www.shikhar.com/blog/mata-temples-in-gujarat/"><img src="img/mataji.png"></a>
+          <h2 class="img-tag">Mataji Temple</h2>
+        </div>
+        <div class="img1">
+          <a href="https://www.tourmyindia.com/blog/popular-krishna-temples-gujarat/"><img src="img/krishna.png"></a>
+          <h2 class="img-tag">Krishna Temple</h2>
+        </div>
+        <div class="img1">
+          <a href="https://www.seawatersports.com/places/gujarat/hanumanji-temple"><img src="img/hanuman.jpg"></a>
+          <h2 class="img-tag">Hanuman Temple</h2>
+        </div>
+        
+    
+      </div>
+    </section>
+      <a href="https://www.gujaratexpert.com/dwarka/"><h1 style="text-decoration: none; position: absolute; top: 750px; left: 170px;color: rgb(17, 10, 1);">DWARKA</h1></a>
+      <a href="https://www.trawell.in/gujarat/somnath"><h1 style="text-decoration: none; position: absolute; top: 900px; left: 360px;color: black;">SOMNATH</h1></a>
+      
+      <img src="img/gujmap.jpeg" style="height: 850px" />
+    </div>
+    <div class="clear"></div>
+        <script>
+      let index = 0;
+      displayImages();
+      function displayImages() {
+        let i;
+        const images = document.getElementsByClassName("image");
+        for (i = 0; i < images.length; i++) {
+          images[i].style.display = "none";
+        }
+        index++;
+        if (index > images.length) {
+          index = 1;
+        }
+        images[index - 1].style.display = "block";
+        setTimeout(displayImages, 2000);
+      }
+    </script>
+  </body>
+</html>

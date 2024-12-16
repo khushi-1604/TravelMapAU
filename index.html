@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Khushi Your Tour Guide</title>
+    <script>
+      function showButton() {
+        document.getElementById("delayedButton").style.display = "block";
+      }
+      window.onload = function () {
+        setTimeout(showButton, 10000); // 10000 milliseconds = 10 seconds
+      };
+    </script>
+  </head>
+  <body>
+    <div class="banner">
+      <video autoplay loop muted plays-inline>
+        <source src="earth.mp4" type="video/mp4" />
+      </video>
+      <div class="navbar">
+        <img src="img/rkc.jpg" class="logo" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Travel</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1>EXPLORE INDIA</h1>
+        <div>
+          <a href="#india" style="text-decoration: none">
+            <button type="button">EXPLORE</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="videocontrol">
+      <video autoplay loop muted plays-inline id="india">
+        <source src="india.mp4" type="video/mp4" />
+      </video>
+      <a href="main.html" style="text-decoration: none">
+        <button id="delayedButton" class="center-button">
+          Lets Start Our Journey
+        </button>
+      </a>
+    </div>
+  </body>
+</html>
